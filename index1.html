@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/CSS/index1.css">
+</head>
+
+<body class="bg-[var(--bg-color)] text-[var(--text-color)]">
+    <!-- header part start -->
+    <header class="w-[100%] sticky top-[0px] z-40">
+        <div class="header flex justify-between container px-[10px] py-[10px] items-center">
+            <div class="mytags">
+                <strong class="text-3xl">Port</strong><span class="span text-xl">folio</span>
+            </div>
+            <div class="flex gap-[30px] hidden md:flex">
+                <a href="/index1.html" class="mytags">HOME</a>
+                <a href="" class="mytags">ABOUT ME</a>
+                <a href="" class="mytags">PROJECTS</a>
+                <a href="" class="mytags">SKILLS</a>
+                <a href="" class="mytags">CONTACT ME</a>
+            </div>
+            <div class="flex">
+                <button
+                    class="md:hidden text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                    type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                    aria-controls="drawer-example">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="" class="buttons mytags w-30 h-9 flex justify-center items-center">FOLLOW ME</a>
+            </div>
+        </div>
+    </header>
+    <div id="drawer-example"
+        class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <h5 id="drawer-label"
+            class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg
+                class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+            </svg>Menu</h5>
+        <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+        </button>
+        <!-- Navigation links -->
+        <nav class="flex flex-col gap-3">
+            <a href="/index1.html" class="text-[var(--bg-color)]">HOME</a>
+            <a href="" class="text-[var(--bg-color)]">ABOUT ME</a>
+            <a href="" class="text-[var(--bg-color)]">PROJECTS</a>
+            <a href="" class="text-[var(--bg-color)]">SKILLS</a>
+            <a href="" class="text-[var(--bg-color)]">CONTACT ME</a>
+        </nav>
+    </div>
+    </div>
+    <!-- main part start -->
+    <main>
+        <section>
+            <div class="flex justify-between container py-40">
+                <div>
+                    <p class="text-md font-bold">Hello, my name is</p>
+                    <h1 class="text-5xl font-bold mt-4">Bidhata <span class="span">Bungmakham Rai</span></h1>
+                    <p class="text-md font-bold mt-4">I'm a <span class="span">Front End Developer</span> </p>
+
+                    <div class="span flex gap-4 mt-10">
+                        <div class="mytags border-2 rounded-full flex items-center justify-center w-11 h-11">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </div>
+                        <div class=" mytags border-2 rounded-full w-11 h-11 flex items-center justify-center">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div class=" mytags border-2 rounded-full w-11 h-11 flex items-center justify-center">
+                            <i class="fa-brands fa-linkedin-in text-xl"></i>
+                        </div>
+                        <div class="mytags border-2 rounded-full w-11 h-11 flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="buttons mytags mt-9 flex items-center justify-center w-50 h-11">
+                        <a href="">DOWNLOAD CV</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/canva girl.png" alt="photo" class="w-[300px]">
+                </div>
+            </div>
+            <!--About me part -->
+            <div class="head py-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-center"><span class="span">ABOUT</span> ME</h2>
+                    <P class="text-center">Transforming ideas into digital experience</P>
+                </div>
+
+                <div class="container flex flex-col mx-auto py-30 md:flex-row items-center md:items-start gap-8 px-4">
+                    <div>
+                        <img src="/img/__-removebg-preview.png" alt="girlphoto" class="md:flex-row items-center md:items-start gap-8 px-4">
+                    </div>
+
+                    <div class="lines md:w-2/3 md:">
+                        <p class="text-justify text-base leading-relaxed md:w-2/3">I’m currently learning front-end web development
+                            using HTML, CSS, and Tailwind CSS, and I’m
+                            loving the process of turning ideas into real websites. My goal is to become a confident
+                            developer who can build beautiful, responsive sites from scratch.
+
+                            I may be just starting out, but I’m constantly learning and experimenting with new ideas.
+                            Right
+                            now, I’m focused on getting comfortable with layout, design, and responsive web pages.
+
+                            In the future, I plan to expand my skills by learning JavaScript and diving into UI/UX
+                            design.
+                            I’m especially interested in how thoughtful design can improve user experience and make
+                            websites
+                            more engaging and easy to use.
+
+                            Outside of coding, I enjoy doing Pilates, exploring digital design, and creating content.
+
+                            This portfolio is where I’ll share my growth, projects, and everything I build along the
+                            way.
+                            Thanks for stopping by!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECTS PART -->
+            <div class="head">
+                <h3 class="text-3xl font-bold text-center"><i>PROJECTS</i></h3>
+                <div class="flex justify-center gap-10 py-24">
+                    <div class="box head2 w-[340px] h-[390px] border-0.90 mt-9 mytags p-[20px] text-justify">
+                        <h4 class="font-bold text-xl  text-center"><i><u>Code IT Website – Header & Footer</u></i></h4>
+                        <p class="text-sm mt-5">Built a clean, responsive header and footer inspired by the Code IT
+                            website, featuring a contact bar, navigation with search, and a well-structured three-column
+                            footer.
+                            <br>
+                        <ul class="list-disc list-inside text-sm">
+                            <b>Features:</b>
+                            <li>Top contact bar with phone, email, and social icons</li>
+                            <li>Navigation menu + search field</li>
+                            <li>Footer with About section, Quick Links, and Payment Options</li>
+                            <li>Social media links with interactive hover state</li>
+                        </ul>
+                        </p>
+                        <p class="text-sm"><b>Tools Used: </b>HTML, CSS, Tailwind CSS</p>
+                        <p class="text-sm"><b>Live Preview:</b> [Coming Soon] </p>
+                    </div>
+                    <div class="box head w-[340px] h-[390px] border-0.90 mytags p-[20px] text-justify">
+                        <h4 class="font-bold text-xl mt-4 text-center"><i><u>Portfolio website</u></i></h4>
+                        <p class="text-sm mt-5">A responsive multi-page portfolio website with four main sections: Home,
+                            About Me, Projects, and Contact.
+                            <br>
+                            The layout is clean and minimal, with smooth spacing and structure created using Tailwind
+                            CSS utility classes.
+                            The site is designed to be mobile-friendly and easy to navigate, with each section clearly
+                            organized and styled using custom components.
+                        </p>
+                        <br>
+                        <p class="text-sm"><b>Tools Used: </b>HTML, CSS, Tailwind CSS</p>
+                        <p class="text-sm"><b>Live Preview:</b> [Coming Soon] </p>
+                    </div>
+                    <div class="head2 box w-[340px] h-[390px] border-0.90 mt-9 mytags p-[20px] text-justify">
+                        <h4 class="font-bold text-xl mt-4 text-center"><i><u>Google Homepage Clone</u></i></h4>
+                        <p class="text-sm mt-5">A simple replica of the Google home screen created using HTML and
+                            Tailwind CSS.</p>
+                        <ul class="list-disc list-inside text-sm mt-2">
+                            <li>Centered Google logo and search bar</li>
+                            <li>Navigation icons like, Gmail, Images, apps grid, and user icon</li>
+                            <li>Responsive layout using Flexbox</li>
+                        </ul>
+                        <p class="text-sm mt-15"><b>Tools Used: </b>HTML, CSS, Tailwind CSS
+                            <br>
+                            <b>Live Preview:</b> [Coming Soon]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer part -->
+        <footer>
+            <section class="sec">
+                <div class="py-10 flex justify-between">
+                    <div class="px-[40px]">
+                        <p class="font-bold">General</p>
+                        <div class="flex flex-col text-sm gap-3 hidden">
+                            <a href="/index1.html" class="mytags">HOME</a>
+                            <a href="" class="mytags">ABOUT ME</a>
+                            <a href="" class="mytags">PROJECTS</a>
+                            <a href="" class="mytags">SKILLS</a>
+                            <a href="" class="mytags">CONTACT ME</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[var(--footer-color)] text px-[100px] py-[50px] rounded-2xl mytags">
+                        <p class="text-center">If you are intrested in working together or have any questions, feel free
+                            to reach out!!</p>
+                        <p class="text-center">📧bidhatarai202@gmail.com</p>
+                    </div>
+                    <div class="px-8 flex flex-col items-end gap-2">
+                        <p class="font-bold">Get in touch</p>
+                        <div class="mytags border-1 rounded-full flex items-center justify-center w-7 h-7">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </div>
+                        <div class=" mytags border-1 rounded-full w-7 h-7 flex items-center justify-center">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div class=" mytags border-1 rounded-full w-7 h-7 flex items-center justify-center">
+                            <i class="fa-brands fa-linkedin-in text-xl"></i>
+                        </div>
+                        <div class="mytags border-1 rounded-full w-7 h-7 flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="ml-10 mr-10">
+                <diV class="text-sm text-center">
+                    <P>© 2025 All rights reserved. Designed with ❤️ using HTML & Tailwind CSS.</P>
+                    <p>Thanks for stopping by my portfolio!</p>
+                    <P>Developed By BIDS</P>
+                    <br>
+                    <br>
+                </diV>
+            </section>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
