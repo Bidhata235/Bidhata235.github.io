@@ -1,6 +1,8 @@
 .container{
     width:90%;
     margin: auto;
+    max-width: 1200px;      
+    /*element can shrink or grow in width depending on the screen size or content, but it will never exceed the max-width i set. */
 }
 :root {
     --cream-color: #F3E5AB;
@@ -29,11 +31,10 @@ transition:0.3s;
     border-radius: 18px;
 }
 .lines {
-  padding: 30px 50px;  /* space inside */
+  padding: 20px;  /* space inside */
   border-left: 2px solid white;
   border-right: 2px solid white;
   font-weight: bold;
-  display: inline-block;
 }
 .head{
     background: linear-gradient(rgb(26, 1, 26),#027d7d, black);}
@@ -49,6 +50,8 @@ transition:0.3s;
     background-color: #0f1320;
     color: gray;
 }
-.yoo{
-    display: none;
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
 }
